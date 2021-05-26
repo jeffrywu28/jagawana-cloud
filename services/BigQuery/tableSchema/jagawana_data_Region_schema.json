@@ -1,0 +1,12 @@
+[
+  {
+    "name": "idRegion",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "region",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "idClass",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "classifyResult",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "idClip",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "idAudioFile",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "idClass",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "startInterval",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "endInterval",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  }
+]
