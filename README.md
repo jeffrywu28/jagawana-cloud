@@ -12,7 +12,7 @@ Jagawana is an integrated system that is able to identify the sounds produced by
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#jagawana-cloud">What Is Jagawana ?</a>
+      <a href="#jagawana-cloud-computing-configurations">What Is Jagawana ?</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -42,7 +42,8 @@ Jagawana is an integrated system that is able to identify the sounds produced by
 - Harisno (M0080883) - Machine Learning - Universitas Gadjah Mada
 - Nico Renaldo (M0080886) - Machine Learning - Universitas Gadjah Mada
 
-### Another Github Path
+### Another Jagawana Github Path
+* [Internet of Things]()
 * [Machine Learning](https://github.com/nicorenaldo/jagawana-ml)
 * [Android](https://github.com/Bobby-Anggunawan/Jagawana-AndroidApp)
 
@@ -51,8 +52,8 @@ Cloud Provider using Google Cloud Platform and the Subscription is $200.
 
 <img src="https://user-images.githubusercontent.com/47622164/119015884-8a995d00-b9c3-11eb-8222-de83b5105a73.jpeg" width="250">
 
-## Documentation
-All of Documentation is in [here](https://github.com/jeffrywu28/jagawana-cloud/wiki)
+## Getting Started
+All of Documentations to getting started is in [here](https://github.com/jeffrywu28/jagawana-cloud/services/gettingstarted.md)
 
 ## Progress Report Cloud Computing Path:
 1. Successfully set permissions for each team member.
@@ -60,7 +61,7 @@ All of Documentation is in [here](https://github.com/jeffrywu28/jagawana-cloud/w
 3. Successfully connected the IoT device to the cloud.
 4. Successfully deploy ML Model that is already running in the cloud.
 5. Successfully creating a Pub / Sub where when the data audio is entered, the Pub/ Sub will receive a message,then with Cloud Function the incoming data will be recorded in the BigQuery and Cloud Storage.
-6. Successfully in making the output of the model on BigQuery accessible via android using the API from AppEngine
+6. Successfully connect to android platform using the API from AppEngine
 
 ## Contributing
 See our contributing guides at [here](https://github.com/jeffrywu28/jagawana-cloud/contributing.md).
