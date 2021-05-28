@@ -1,3 +1,4 @@
 # Cloud Storage
 
-We
+We configure GCS like this:
+
