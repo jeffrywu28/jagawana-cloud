@@ -3,7 +3,7 @@ We create 2 Pubsub Topic. Pub/sub is a GCP service can ingest data and asyncrono
 
 <img src="https://user-images.githubusercontent.com/47622164/119776432-20b31300-beef-11eb-99cf-0ed07ab430f4.png">
 
-### Function of each topic
+### Purpose of each topic
 #### audio topic 
 Topic for communicate device to IoT Core, have 2 subscriptions.
 
@@ -19,6 +19,10 @@ Topic for trigger ML online predictions and return the result to bigquery and GC
 
 * do_predict-sub : receive trigger command from do_predic topic.
 * gcf-prediction : trigger ML prediction and return the result to bigquery and GCS.
+
+## Next Step
+[Next Step is We Configuring Bigquery]().
+
 
 ## References
 [Google Cloud Pub/Sub](https://cloud.google.com/pubsub)

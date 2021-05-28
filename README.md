@@ -45,15 +45,24 @@ Jagawana is an integrated system that is able to identify the sounds produced by
 ### Another Jagawana Github Path
 * [Internet of Things]()
 * [Machine Learning](https://github.com/nicorenaldo/jagawana-ml)
-* [Android](https://github.com/Bobby-Anggunawan/Jagawana-AndroidApp)
+* [Mobile Apps Android](https://github.com/Bobby-Anggunawan/Jagawana-AndroidApp)
 
 ## Prototype Architecture of Jagawana Cloud Computing
 Cloud Provider using Google Cloud Platform and the Subscription is $200.
 
 <img src="https://user-images.githubusercontent.com/47622164/119015884-8a995d00-b9c3-11eb-8222-de83b5105a73.jpeg" width="250">
 
+#### GCP Service :
+- Google Cloud IoT Core
+- Google Cloud Pub/Sub
+- Google Cloud Functions
+- Google AI Platform
+- Google Cloud Storage
+- Google BigQuery
+- Google App Engine
+
 ## Getting Started
-All of Documentations to getting started is in [here](https://github.com/jeffrywu28/jagawana-cloud/services/gettingstarted.md)
+All of Documentations to getting started is in [here](https://github.com/jeffrywu28/jagawana-cloud/services/gettingstarted.md).
 
 ## Progress Report Cloud Computing Path:
 1. Successfully set permissions for each team member.
@@ -61,7 +70,9 @@ All of Documentations to getting started is in [here](https://github.com/jeffryw
 3. Successfully connected the IoT device to the cloud.
 4. Successfully deploy ML Model that is already running in the cloud.
 5. Successfully creating a Pub / Sub where when the data audio is entered, the Pub/ Sub will receive a message,then with Cloud Function the incoming data will be recorded in the BigQuery and Cloud Storage.
-6. Successfully connect to android platform using the API from AppEngine
+6. Successfully connect to android platform using the API from AppEngine.
+
+## 
 
 ## Contributing
 See our contributing guides at [here](https://github.com/jeffrywu28/jagawana-cloud/contributing.md).

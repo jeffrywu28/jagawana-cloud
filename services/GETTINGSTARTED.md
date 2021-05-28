@@ -13,6 +13,9 @@ If you have an GCP coupon, you can redeem at [here](https://console.cloud.google
 
 ### Quickstart
 1. Add your teammates to join your GCP at this [tutorial](https://www.youtube.com/watch?v=PqMGmRhKsnM) 
-2. Set the payment billing alert (if you want) at [here](https://www.youtube.com/watch?v=F4omjjMZ54k) and you can learn how to optimize your billing at [here](https://www.youtube.com/playlist?list=PLIivdWyY5sqKJx6FwJMRcsnFIkkNFtsX9).
-3. Set your connection within Google IoT Core with Raspi. You can learn the guide [here](https://www.youtube.com/watch?v=3Zwlj9x96Jg) and the official documentation is at [here](https://cloud.google.com/iot/docs/quickstart).
-4. The connection 
+2. Set the payment billing alert (if you want) at [here](https://www.youtube.com/watch?v=F4omjjMZ54k) and you can learn how to optimize your billing [here](https://www.youtube.com/playlist?list=PLIivdWyY5sqKJx6FwJMRcsnFIkkNFtsX9).
+3. Set your connection within Google IoT Core with Raspi. You can learn the guide [here](https://www.youtube.com/watch?v=3Zwlj9x96Jg) and the official documentation is [here](https://cloud.google.com/iot/docs/quickstart).
+4. Prepare The Google Cloud Storage folder,permission, you can watch our tutorial at [here]()
+5. Create Bigquery dataset and table schema. the tutorial [here]()
+6. Create Pub/Sub connection between IoT Core and Cloud Function, Storage Group and Cloud Function, AI Platform and Cloud Function. After that we [here]()
+7. [here]()
