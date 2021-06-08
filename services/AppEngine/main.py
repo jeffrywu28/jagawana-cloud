@@ -25,11 +25,24 @@ def hello_world():
 @app.route('/getallresult',methods=['GET'])
 def hello():
     """Return a friendly HTTP greeting."""
-    QUERY = ('SELECT idClip, r.idAudioFile, startInterval, endInterval, idDevice,region,longitude,latitude,timestamp,classifyResult,CONCAT("https://storage.googleapis.com/input-audio-pipeline/",r.idAudioFile) AS linkaudio FROM `gcp-project-id.jagawana_data.Result` r inner join `gcp-project-id.jagawana_data.IotInputdata` i on r.idAudioFile = i.idAudioFile inner join `gcp-project-id.jagawana_data.Class` c on r.idClass=c.idClass inner join `gcp-project-id.jagawana_data.Region` reg on i.idRegion= reg.idRegion')
+    QUERY = ('SELECT idClip,r.idAudioFile,startInterval,endInterval,i.idDevice,region,longitude,latitude,timestamp,classifyResult,CONCAT("https://storage.googleapis.com/input-audio/Wave%20Storage/",r.idAudioFile) AS link FROM `your-id-project.your_dataset.Result` r INNER JOIN  `your-id-project.your_dataset.IotInputdata` I ON  r.idAudioFile = i.idAudioFile INNER JOIN  `your-id-project.your_dataset.Class` c ON  r.idClass=c.idClass INNER JOIN  `your-id-project.your_dataset.Devices` d ON  i.idDevice= d.idDevice INNER JOIN  `your-id-project.your_dataset.Region` reg ON  d.idRegion= reg.idRegion ORDER BY timestamp ASC')
     query_job = bq_client.query(QUERY)  # API request to bigquery
     df = query_job.to_dataframe() #parse query result to dataframe
     df['timestamp'] = df['timestamp'].astype(str) #convert timestamp format
     json_obj = json.dumps(df.to_dict('records')) #parse the dataframe to JSON
+    return json_obj
+
+#getdevice
+# getdevice API endpoint with GET http request.
+# how to use : https://project.appspot.com/getalldevices
+# displays all device information connected to the cloud.
+@app.route('/getalldevices',methods=['GET'])
+def device():
+    """Return a friendly HTTP greeting."""
+    QUERY1 = ('SELECT idDevice,r.idRegion,latitude,longitude,region FROM `your-id-project.your_dataset.Devices` r INNER JOIN `your-id-project.your_dataset.Region` i ON r.idRegion = i.idRegion')
+    query_job = bq_client.query(QUERY1)  # API request
+    df = query_job.to_dataframe()
+    json_obj = json.dumps(df.to_dict('records'))
     return json_obj
 
 # getresultid API endpoint with GET http request.
@@ -38,8 +51,7 @@ def hello():
 @app.route('/getresultid',methods=['GET'])
 def resultbyid():
     idcl = request.args['id']
-    QUERY2 = ('SELECT idClip,region,longitude,latitude,timestamp,classifyResult FROM `gcp-project-id.jagawana_data.Class` c inner join `gcp-project-id.jagawana_data.Result`r on c.idClass = r.idClass inner join `gcp-project-id.jagawana_data.IotInputdata` ii on ii.idAudioFile=r.idAudioFile inner join `gcp-project-id.jagawana_data.Region` reg on reg.idRegion= ii.idRegion WHERE idClip = "' + idcl +'"')
-    query_job = bq_client.query(QUERY2) 
+    QUERY2 = ('SELECT  idClip,  r.idAudioFile,  startInterval,  endInterval,  i.idDevice,  region,  longitude,  latitude,  timestamp,  classifyResult, CONCAT("https://storage.googleapis.com/input-audio/Wave%20Storage/",r.idAudioFile) AS link FROM  `your-id-project.your_dataset.Result` r INNER JOIN  `your-id-project.your_dataset.IotInputdata` I ON  r.idAudioFile = i.idAudioFile INNER JOIN  `your-id-project.your_dataset.Class` c ON  r.idClass=c.idClass INNER JOIN  `your-id-project.your_dataset.Devices` d ON  i.idDevice= d.idDevice INNER JOIN  `your-id-project.your_dataset.Region` reg ON  d.idRegion= reg.idRegion WHERE idClip = "' + idcl +'"')    query_job = bq_client.query(QUERY2) 
     df = query_job.to_dataframe()
     df['timestamp'] = df['timestamp'].astype(str)
     json_obj = json.dumps(df.to_dict('records'))
