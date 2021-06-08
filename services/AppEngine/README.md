@@ -8,24 +8,42 @@ https://www.qwiklabs.com/focuses/1014?parent=catalog
 
 Or use this simple tutorial :
 1. Open [GCP Console](https://console.cloud.google.com/) then at the left > APIs & Services > Library. <br><img src="https://user-images.githubusercontent.com/47622164/121245959-ce98c700-c8ca-11eb-8805-f129e5191e25.png" width="350">
-2. I try to download the Hello World example (use it in GCP Console)
+2. Try enable Python Virtual Environtment and install the requirement
+```
+virtualenv -p python3 env
+```
+3. Then activate with this command
+```
+source env/bin/activate
+```
+4. Copy and paste my requirement to your requirement.txt
+```
+pip install -r requirements.txt
+```
+5. I try to download the Hello World example (use it in GCP Console)
 ```
 gsutil -m cp -r gs://spls/gsp067/python-docs-samples .
 ```
-3. Then go to the folder
+6. Then go to the folder
 ```
 cd python-docs-samples/appengine/standard_python3/hello_world
 ```
-4. Edit your code at
+7. Edit your code at
 ```
 nano main.py
 ```
-5. Deploy your App
+8. Test your flask with this command
+```
+python main.py
+```
+9. Then click like example below for checking <br>
+![image](https://user-images.githubusercontent.com/47622164/121248557-c3936600-c8cd-11eb-9d0b-cd18d2b88800.png)
+
+10. After all checked, Deploy your App
 ```
 gcloud app deploy
 ```
-6. Yes and choose your favorite region.
-7. Then show your deployed link
+11. Yes and choose your favorite region. Then show your deployed link. Click and test it.
 ```
 gcloud app browse
 ```
