@@ -20,7 +20,9 @@ The quickest way to getting started with the Jagawana-Cloud path. You can get [f
 * IoT device (Rasp,etc.).
 
 You can claim your free-trial $300 tutorial [here](https://k21academy.com/google-cloud/create-google-cloud-free-tier-account/). <br>
-If you have an GCP coupon, you can redeem at [here](https://console.cloud.google.com/trygcp)
+If you have an GCP coupon, you can redeem at [here](https://console.cloud.google.com/trygcp).<br>
+Your mobile apps friends need to use Google Maps API. You can follow this tutorial [here](https://developers.google.com/maps/documentation/android-sdk/start#set_up_in_cloud_console).<br>
+You must to be wisely when enable each API at GCP,only turn on what is needed.
 
 ### Quickstart
 1. Add your teammates to join your GCP at this [tutorial](https://www.youtube.com/watch?v=PqMGmRhKsnM) 
@@ -33,3 +35,7 @@ If you have an GCP coupon, you can redeem at [here](https://console.cloud.google
 8. Create cloud Function for trigger the Google Cloud Storage and AI Platform [here](https://github.com/jeffrywu28/jagawana-cloud/tree/main/services/CloudFunctions)
 9. After all services step 1-8 is finished, we deploy the last services App Engine with python Flask. See the full documentation [here](https://github.com/jeffrywu28/jagawana-cloud/tree/main/services/AppEngine)
 10. All is done.
+
+## References
+
+https://cloud.google.com/docs
