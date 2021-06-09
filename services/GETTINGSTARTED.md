@@ -31,3 +31,5 @@ If you have an GCP coupon, you can redeem at [here](https://console.cloud.google
 6. Create Pub/Sub connection between IoT Core and Cloud Function, Storage Group and Cloud Function, AI Platform and Cloud Function. at [here](https://github.com/jeffrywu28/jagawana-cloud/tree/main/services/PubSub)
 7. For tutorial how to deploy ML to GCP, view [here](https://github.com/nicorenaldo/jagawana-ml#deploying-model-to-gcp)
 8. Create cloud Function for trigger the Google Cloud Storage and AI Platform [here](https://github.com/jeffrywu28/jagawana-cloud/tree/main/services/CloudFunctions)
+9. After all services step 1-8 is finished, we deploy the last services App Engine with python Flask. See the full documentation [here](https://github.com/jeffrywu28/jagawana-cloud/tree/main/services/AppEngine)
+10. All is done.
